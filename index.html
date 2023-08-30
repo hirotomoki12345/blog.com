@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ・サイト</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Helvetica', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .story {
+            padding: 20px;
+            border: 1px solid white;
+            margin-top: 20px;
+        }
+        .moving-lines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .line {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            animation: moveLine 5s infinite linear;
+        }
+        @keyframes moveLine {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-lines">
+        <div class="line"></div>
+        <div class="line" style="left: 20%;"></div>
+        <div class="line" style="left: 40%;"></div>
+        <div class="line" style="left: 60%;"></div>
+        <div class="line" style="left: 80%;"></div>
+    </div>
+    <div class="container">
+        <h1>ブログ・サイト</h1>
+        <p>最新の記事をチェックしよう！</p>
+        <a href="article1.html">記事1へ</a>
+        <a href="article2.html">記事2へ</a>
+
+        <!-- ストーリー要素を追加 -->
+        <div class="story">
+            <h2>ブログのストーリー</h2>
+            <p>このブログは、私の旅行体験から生まれた物語をシェアする場所です。日々の出来事や感動を記事として綴り、読者の皆さんと共有します。一緒に世界を巡り、新たな冒険に出かけましょう。</p>
+        </div>
+    </div>
+</body>
+</html>
