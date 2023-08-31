@@ -19,7 +19,7 @@
     h2 {
       font-size: 20px;
       font-weight: bold;
-      color: #000;
+      color: #333;
     }
 
     p {
@@ -57,6 +57,27 @@
     .important {
       color: #FF0000;
     }
+
+    /* 見出しを押すと記事の内容を表示する */
+    .article-content {
+      display: none;
+    }
+
+    .article-header a {
+      cursor: pointer;
+    }
+
+    .article-header a:hover {
+      text-decoration: underline;
+    }
+
+    .article-header a:active {
+      text-decoration: none;
+    }
+
+    .article-header a:focus {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -67,7 +88,7 @@
 
   <main>
     <section>
-      <h2>感染症危機管理統括庁発足</h2>
+      <h2 class="article-header">感染症危機管理統括庁発足</h2>
       <p class="important">2023年9月1日、日本政府は、感染症危機管理統括庁を設置しました。</p>
       <p>
         内閣官房に置かれるこの庁は、新型コロナウイルス感染症をはじめとする感染症の対策を総合的に担います。
@@ -75,7 +96,7 @@
       <p>
         これまで感染症対策を担ってきた各省庁の連携を強化し、より効果的な対策を講じるためです。庁の長には、内閣官房長官が兼務する予定です。
       </p>
-      <p>
+      <p class="article-content">
         庁の機能は、以下の3つです。
       </p>
       <ul>
@@ -83,28 +104,18 @@
         <li>感染症対策に関する各省庁の調整</li>
         <li>感染症対策の実施状況の監視</li>
       </ul>
-      <p>
+      <p class="article-content">
         また、感染症対策に関する専門家を配置し、科学的知見に基づいた政策立案を支援します。
       </p>
-      <p>
+      <p class="article-content">
         感染症危機管理統括庁の設置は、日本が感染症対策において、さらに強力な体制を整えたことを意味します。今後、庁がどのように機能し、感染症対策に貢献していくのかが注目されます。
       </p>
     </section>
 
     <section>
-      <h2>今後の展望</h2>
+      <h2 class="article-header">今後の展望</h2>
       <p class="important">感染症危機管理統括庁の設置により、日本は、以下の点において、感染症対策を強化することが期待されます。</p>
-      <ul>
+      <ul class="article-content">
         <li>感染症対策の意思決定の迅速化</li>
         <li>各省庁の連携強化による対策の効率化</li>
-        <li>科学的根拠に基づいた政策立案</li>
-      </ul>
-      <p>
-        感染症危機管理統括庁の設置は、日本が感染症の脅威から国民の健康と安全を守るための大きな一歩となります。
-      </p>
-    </section>
-
-    <section>
-      <h2>関連リンク</h2>
-      <ul>
-        <li><a href="https://www.kantei.go.jp/jp/singi/shokuiku/kansen/index.html">内閣官房 感染症危機管理統括庁</a></li>
+        <
