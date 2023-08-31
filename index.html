@@ -1,76 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブログ・サイト</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6128618236380905"
-     crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: 'Arial', sans-serif;
-        }
-        h1, h2 {
-            font-family: 'Helvetica', sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .story {
-            padding: 20px;
-            border: 1px solid white;
-            margin-top: 20px;
-        }
-        .moving-lines {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            pointer-events: none;
-            z-index: -1;
-        }
-        .line {
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.3);
-            animation: moveLine 5s infinite linear;
-        }
-        @keyframes moveLine {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(100%);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>最新ニュース</title>
 </head>
 <body>
-    <div class="moving-lines">
-        <div class="line"></div>
-        <div class="line" style="left: 20%;"></div>
-        <div class="line" style="left: 40%;"></div>
-        <div class="line" style="left: 60%;"></div>
-        <div class="line" style="left: 80%;"></div>
-    </div>
-    <div class="container">
-        <h1>ブログ・サイト</h1>
-        <p>最新の記事をチェックしよう！</p>
-        <a href="article1.html">記事1へ</a>
-        <a href="article2.html">記事2へ</a>
 
-        <!-- ストーリー要素を追加 -->
-        <div class="story">
-            <h2>ブログのストーリー</h2>
-            <p>このブログは、私の旅行体験から生まれた物語をシェアする場所です。日々の出来事や感動を記事として綴り、読者の皆さんと共有します。一緒に世界を巡り、新たな冒険に出かけましょう。</p>
-        </div>
-    </div>
+  <header>
+    <h1>最新ニュース</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>感染症危機管理統括庁発足</h2>
+      <p>
+        2023年9月1日、日本政府は、感染症危機管理統括庁を設置することを発表しました。この庁は、内閣官房に置かれ、新型コロナウイルス感染症をはじめとする感染症の対策を総合的に担います。
+      </p>
+      <p>
+        新たな庁の設置は、これまで感染症対策を担ってきた各省庁の連携を強化し、より効果的な対策を講じるためです。庁の長には、内閣官房長官が兼務する予定です。
+      </p>
+      <p>
+        庁は、以下の機能を担います。
+        <ul>
+          <li>感染症対策の基本方針の策定</li>
+          <li>感染症対策に関する各省庁の調整</li>
+          <li>感染症対策の実施状況の監視</li>
+        </ul>
+      </p>
+      <p>
+        また、感染症対策に関する専門家を配置し、科学的知見に基づいた政策立案を支援します。
+      </p>
+      <p>
+        新庁の設置は、日本が感染症対策において、さらに強力な体制を整えたことを意味します。今後、庁がどのように機能し、感染症対策に貢献していくのかが注目されます。
+      </p>
+    </section>
+
+    <section>
+      <h2>タイトル2</h2>
+      <p>本文2</p>
+    </section>
+
+    <section>
+      <h2>タイトル3</h2>
+      <p>本文3</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+
 </body>
 </html>
